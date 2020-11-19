@@ -30,6 +30,8 @@ router.post("/", async (req, res) => {
             status: "pending",
             date: dateToAppoinment,
           });
+
+          console.log(newAppointment)
         
           await newAppointment.save();
         
